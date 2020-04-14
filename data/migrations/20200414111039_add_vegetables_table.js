@@ -11,3 +11,7 @@ exports.up = function(knex) {
 exports.down = function(knex) {
   return knex.schema.dropTableIfExists("veggies");
 };
+
+//npx knex migrate:make add_veggies
+//delete db3 file
+//npx knex migrate:latest
